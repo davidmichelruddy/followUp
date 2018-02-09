@@ -20,15 +20,50 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<script>
+				function resizeIframe(obj) {
+					obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+				}
+			</script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>My name is<br>David Michel-Ruddy</section>
-				<section>I make stuff....</section>
+				<section data-transition="zoom">I make stuff...</section>
+				<section data-transition="zoom">with sound</section>
+				<!-- VIDEO -->
 
-				<section>
-						<iframe data-src="https://davidmichelruddy.github.io/p5js_sketch/"></iframe>
+				<section data-background-color="#d7f7fc">
+						<p>I wrote the music for this Got Milk? commercial</p>
+					<iframe class="stretch" src="https://player.vimeo.com/video/75619160?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</section>
+				<section data-background-color="#edf0ed"data-transition="zoom">
+						<p>and this Chevy Campaign</p>
+						<iframe src="https://player.vimeo.com/video/75621041?title=0&byline=0&portrait=0" width="300" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="https://player.vimeo.com/video/75617833?title=0&byline=0&portrait=0" width="300" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="https://player.vimeo.com/video/75617832?title=0&byline=0&portrait=0" width="300" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</section>
+					<section data-background-color="white" data-background-image="http://bigsignalmusic.com/app/themes/sage/dist/images/manuscript_7.jpg">
+						<img class="plain" src="http://bigsignalmusic.com/app/themes/sage/dist/images/BigSig_NewPulse_Logo_3.svg" width="250px">
+						<p>I started this stock music company</p>
+					</section>
+				<!-- END VIDEO -->
+				<section data-transition="fade" data-background-iframe="https://davidmichelruddy.github.io/QuadFlower/" data-background-interactive>
+					<p>Take a stroll through my aglorithmic flower garden</p>
+				</section>
+				<section data-background-iframe="https://davidmichelruddy.github.io/QuadFlower/" data-background-interactive>
+				</section>
+				<section data-background-iframe="https://davidmichelruddy.github.io/QuadFlower/" data-background-interactive>
+					<p>now on to pretty triangle world!</p>
+
+				</section>
+				<section data-background-iframe="https://davidmichelruddy.github.io/p5js_sketch/" data-background-interactive>
+				</section>
+				<section data-background-iframe="https://davidmichelruddy.github.io/p5js_sketch/" data-background-interactive>
+				</section>
+				<section data-background-iframe="https://davidmichelruddy.github.io/JitterBugWaltz/" data-background-interactive>
+					<p>Where am I?</p>
 				</section>
 				<section data-markdown>
 					<textarea data-template>
